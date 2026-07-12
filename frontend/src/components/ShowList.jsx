@@ -22,7 +22,7 @@ function ShowList({ habits, setHabits }) {
             if (deleted) {
                 setHabits(prev => prev.filter(habit => habit._id !== id));
             }
-        } catch (err) {
+        } catch {
             alert("Failed to delete habit. Please try again.");
         } finally {
             setLoadingId(null);
@@ -49,7 +49,7 @@ function ShowList({ habits, setHabits }) {
                     habit._id === updatedHabit._id ? updatedHabit : habit
                 )
             );
-        } catch (err) {
+        } catch {
             alert("failed to update habit. Please try again.");
         } finally {
             setLoadingId(null);

@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react'
 import { Link, Route, Routes, Navigate } from "react-router-dom"
-import { AuthContext } from './context/AuthContext.jsx'
+import { AuthContext } from './context/authContext.js'
 
 import { Home } from "./pages/Home"
 import { CompleteList } from "./pages/CompleteList.jsx"
@@ -29,8 +29,8 @@ function App() {
           throw new Error(data.message || "Failed to fetch habits");
 
         setHabits(data);
-      } catch (err) {
-        console.log("Failed to load habits", err);
+      } catch {
+        return;
       }
     }
       

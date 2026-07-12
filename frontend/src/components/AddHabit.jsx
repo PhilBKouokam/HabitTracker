@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { apiFetch } from "../utils/api";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../context/authContext";
 
 function AddHabit({ habits, setHabits }) {
     const { user } = useContext(AuthContext);
@@ -48,7 +48,6 @@ function AddHabit({ habits, setHabits }) {
             completed: false,
             dateAdded: new Date().toISOString(),
             dateCompleted: null,
-            /*user: user.id // <- Send the logged-in user ID*/
         };
 
         try {
@@ -75,8 +74,7 @@ function AddHabit({ habits, setHabits }) {
                 setSuccess("");
             }, 2000);
 
-        } catch (err) {
-            console.error("Add habit error:", err);
+        } catch {
             setError("Network error. Please try again.");
             setTimeout(() => setError(""), 2000);
         } finally {

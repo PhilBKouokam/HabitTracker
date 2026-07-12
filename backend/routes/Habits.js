@@ -21,8 +21,6 @@ router.get("/", async (req, res) => {
 // POST - Create new habit
 router.post("/", async (req, res) => {
   try {
-    console.log("Received habit data:", req.body);
-
     const habit = new Habit({
       habitName: req.body.habitName,
       completed: req.body.completed === true,
