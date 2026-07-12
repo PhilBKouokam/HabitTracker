@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Habit Tracker">
+  <defs>
+    <linearGradient id="bg" x1="12" x2="52" y1="8" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="check" x1="22" x2="44" y1="35" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#84cc16"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" x="4" y="4" fill="url(#bg)" rx="14"/>
+  <path fill="#ffffff" d="M19 15a4 4 0 0 0-4 4v27a4 4 0 0 0 4 4h26a4 4 0 0 0 4-4V19a4 4 0 0 0-4-4h-3v4a2 2 0 1 1-4 0v-4H26v4a2 2 0 1 1-4 0v-4z" opacity=".96"/>
+  <path fill="#dbeafe" d="M15 24h34v6H15z"/>
+  <circle cx="23" cy="37" r="3" fill="#bfdbfe"/>
+  <circle cx="32" cy="37" r="3" fill="#bfdbfe"/>
+  <circle cx="41" cy="37" r="3" fill="#bfdbfe"/>
+  <path fill="none" stroke="url(#check)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="m22 41 7 7 16-18"/>
+</svg>
