@@ -1,6 +1,6 @@
 # Habit Tracker
 
-A full-stack habit tracking application that helps users create an account, manage personal habits, and track completion progress through a secure MERN-style client-server workflow.
+A full-stack habit tracking application for creating an account, managing personal habits, and tracking completion progress through a secure client-server workflow.
 
 ## 🎥 2-Minute Walkthrough
 
@@ -14,13 +14,40 @@ https://habit-tracker-six-murex.vercel.app
 
 https://github.com/PhilBKouokam/HabitTracker
 
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Login</strong><br />
+      <img src="screenshots/login.png" alt="Habit Tracker login screen" width="420" />
+    </td>
+    <td align="center" width="50%">
+      <strong>Registration</strong><br />
+      <img src="screenshots/register.png" alt="Habit Tracker registration screen" width="420" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Create Habit</strong><br />
+      <img src="screenshots/add-habit.png" alt="Habit Tracker create habit screen" width="420" />
+    </td>
+    <td align="center" width="50%">
+      <strong>Habit Dashboard</strong><br />
+      <img src="screenshots/habit-list.png" alt="Habit Tracker dashboard with habit list" width="420" />
+    </td>
+  </tr>
+</table>
+
+Additional screenshots that would strengthen the story: save `screenshots/completed-habits.png` for the completed habits page and `screenshots/mobile-view.png` for a responsive mobile view.
+
 ## Why I Built This
 
-I built Habit Tracker to practice the engineering patterns behind production-style full-stack applications: user authentication, protected data, persistent CRUD operations, and clear communication between a frontend client and backend API.
+I built Habit Tracker to practice the engineering patterns behind production-style full-stack applications: authentication, protected user data, persistent CRUD operations, and clear communication between a frontend client and backend API.
 
-The project focuses on the full request lifecycle. A user action starts in React, flows through shared frontend state, reaches a REST API built with Express, is validated and handled by server-side logic, persists data in MongoDB through Mongoose, and returns a response that updates the UI.
+The project focuses on the full request lifecycle. A user action starts in React, flows through shared frontend state, reaches an Express REST API, persists data in MongoDB through Mongoose, and returns a response that updates the UI.
 
-This gave me practical experience building secure account-based features, protecting user-specific records, and deploying separate frontend and backend services.
+This gave me practical experience building account-based features, protecting user-specific records, and deploying separate frontend and backend services.
 
 ## Features
 
@@ -45,6 +72,36 @@ This gave me practical experience building secure account-based features, protec
 - Client-server architecture with separate frontend and backend deployments.
 - User-scoped database queries to protect private habit data.
 - React state management for immediate UI updates after API responses.
+
+## 🏗 Architecture
+
+Habit Tracker follows a simple client-server architecture where the frontend owns the user experience and the backend owns authentication, authorization, and persistence.
+
+React UI
+
+↓
+
+React Context
+
+↓
+
+REST API
+
+↓
+
+Express Controllers
+
+↓
+
+MongoDB with Mongoose
+
+↓
+
+API Response
+
+↓
+
+React UI Update
 
 ## Key User Flows
 
@@ -90,6 +147,18 @@ Delete Habit
 | POST | `/api/habits` | Create a habit for the authenticated user. | Yes |
 | PATCH | `/api/habits/:id` | Update completion status and completion date. | Yes |
 | DELETE | `/api/habits/:id` | Delete a habit owned by the authenticated user. | Yes |
+
+## 🚀 Future Improvements
+
+- Add full habit editing for updating habit names and details.
+- Track habit streaks and completion history over time.
+- Add a calendar view for weekly and monthly progress.
+- Send email reminders for habits that are due.
+- Add push notifications for recurring habits.
+- Add automated frontend and backend tests.
+- Strengthen request validation with a schema validation library.
+- Move authentication to HTTP-only cookies for stronger token storage.
+- Build an analytics dashboard for completion rates and consistency trends.
 
 ## Local Development
 
