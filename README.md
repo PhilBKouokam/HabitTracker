@@ -20,26 +20,34 @@ https://github.com/PhilBKouokam/HabitTracker
   <tr>
     <td align="center" width="50%">
       <strong>Login</strong><br />
-      <img src="screenshots/login.png" alt="Habit Tracker login screen" width="420" />
+      <img src="screenshots/login.png" alt="Habit Tracker login screen" width="420">
     </td>
     <td align="center" width="50%">
       <strong>Registration</strong><br />
-      <img src="screenshots/register.png" alt="Habit Tracker registration screen" width="420" />
+      <img src="screenshots/register.png" alt="Habit Tracker registration screen" width="420">
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <strong>Create Habit</strong><br />
-      <img src="screenshots/add-habit.png" alt="Habit Tracker create habit screen" width="420" />
+      <img src="screenshots/add-habit.png" alt="Habit Tracker create habit screen" width="420">
     </td>
     <td align="center" width="50%">
       <strong>Habit Dashboard</strong><br />
-      <img src="screenshots/habit-list.png" alt="Habit Tracker dashboard with habit list" width="420" />
+      <img src="screenshots/habit-list.png" alt="Habit Tracker dashboard with habit list" width="420">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Completed Habits</strong><br />
+      <img src="screenshots/completed-habits.png" alt="Habit Tracker completed habits screen" width="420">
+    </td>
+    <td align="center" width="50%">
+      <strong>Mobile Responsive View</strong><br />
+      <img src="screenshots/mobile-view.png" alt="Habit Tracker mobile responsive view" width="260">
     </td>
   </tr>
 </table>
-
-Additional screenshots that would strengthen the story: save `screenshots/completed-habits.png` for the completed habits page and `screenshots/mobile-view.png` for a responsive mobile view.
 
 ## Why I Built This
 
@@ -77,51 +85,11 @@ This gave me practical experience building account-based features, protecting us
 
 Habit Tracker follows a simple client-server architecture where the frontend owns the user experience and the backend owns authentication, authorization, and persistence.
 
-React UI
-
-↓
-
-React Context
-
-↓
-
-REST API
-
-↓
-
-Express Controllers
-
-↓
-
-MongoDB with Mongoose
-
-↓
-
-API Response
-
-↓
-
-React UI Update
+`React UI` → `React Context` → `REST API` → `Express Controllers` → `MongoDB with Mongoose` → `API Response` → `React UI Update`
 
 ## Key User Flows
 
-Register
-
-↓
-
-Login
-
-↓
-
-Create Habit
-
-↓
-
-Complete / Undo
-
-↓
-
-Delete Habit
+`Register` → `Login` → `Create Habit` → `Complete / Undo` → `Delete Habit`
 
 ## Tech Stack
 
